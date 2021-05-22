@@ -288,6 +288,9 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+# Kernel Headers
+PRODUCT_VENDOR_KERNEL_HEADERS := device/motorola/chef-kernel/msm8998/kernel-headers
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service \
