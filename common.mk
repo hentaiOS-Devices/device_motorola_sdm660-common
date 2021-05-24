@@ -412,9 +412,13 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf \
 
-# Wi-Fi Display
+# fastbootd
 PRODUCT_PACKAGES += \
-    libmediaextractorservice
+    fastbootd
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
+
+# Enable retrofit dynamic partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
