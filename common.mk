@@ -301,7 +301,7 @@ PRODUCT_VENDOR_KERNEL_HEADERS := device/motorola/chef-kernel/msm8998/kernel-head
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service \
+    android.hardware.power@1.2-service \
     vendor.qti.hardware.perf@2.0.vendor
 
 # Protobuf
